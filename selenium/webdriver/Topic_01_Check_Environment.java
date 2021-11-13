@@ -25,14 +25,14 @@ public class Topic_01_Check_Environment {
 
 	@Test
 	public void TC_01_ValidateCurrentUrl() {
-		// Login Page Url matching
+		// Check Login Page Url matching 
 		String loginPageUrl = driver.getCurrentUrl();
 		Assert.assertEquals(loginPageUrl, "https://www.facebook.com/");
 	}
 
 	@Test
 	public void TC_02_ValidatePageTitle() {
-		// Login Page title
+		// Login Page title  
 		String loginPageTitle = driver.getTitle();
 		Assert.assertEquals(loginPageTitle, "Facebook – log in or sign up");
 	}
